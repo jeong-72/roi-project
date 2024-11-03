@@ -3,13 +3,14 @@ import { View, Text, Button, StyleSheet } from 'react-native'
 import { createStackNavigator } from '@react-navigation/stack';
 import LoginScreen from '../screens/LoginScreen';
 import SignUpScreen from "../screens/SignUpScreen";
+// import MainNavigator from "./MainNavigator";
 import ErrorScreen from "../screens/ErrorScreen";
 
 const Stack = createStackNavigator();
 
 export default function RootNavigator() {
   return (
-    <Stack.Navigator initialRouteName='Login'>
+    <Stack.Navigator initialRouteName='Login' >
       <Stack.Screen
         name='Login'
         component={LoginScreen}
