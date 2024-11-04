@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
 
-export default function SignUpScreen(props) {
+export default function HomeScreen(props) {
   return (
     <View style={styles.container}>
       <View style={styles.innerView}>
@@ -22,7 +22,6 @@ export default function SignUpScreen(props) {
             }}
           />
         </View>
-        
       </View>
     </View>
   );
@@ -32,30 +31,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
-    // alignItems: "center",
-    padding: 15,
-    backgroundColor: "white",
+    alignItems: "center",
   },
   text: {
     fontSize: 18,
     marginBottom: 20,
-    textAlign: "center",
-  },
-  innerView: {
-    flex: 1,
-    justifyContent: "center",
-    // alignItems: "center",
-    // marginHorizontal: 16,
-    padding: 15,
-    backgroundColor: "#d1f1ef",
-    borderWidth: 2,
-    borderColor: "#1b70e9",
-    borderRadius: 10,
-    // width: "100%",
-  },
-  fixToText: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    marginHorizontal: 30,
   },
 });
